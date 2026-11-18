@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 3</title>
+</head>
+<body>
+
+<script>
+    var n = Math.floor(Math.random() * 11);
+    var trouve = false;
+    for (var i = 1; i <= 6; i++) {
+        var x = Number(prompt("Donner un nombre entre 0 et 10"));
+        if (x == n) {
+            alert("Gagnant !!!");
+            trouve = true;
+            break;
+        }
+        else if (x > n) {
+            alert("Trop grand");
+        }
+        else {
+            alert("Trop petit");
+        }
+    }
+
+    if (trouve == false) {
+        document.write("Perdu ! Le nombre était " + n);
+    }
+</script>
+
+</body>
+</html>

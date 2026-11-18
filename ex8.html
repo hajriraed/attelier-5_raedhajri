@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 8</title>
+</head>
+<body>
+
+<script>
+    var jours = ['Dimanche', 'Lundi', 'Mardi','Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+    var mois = ['Janvier', 'Février', 'Mars','Avril', 'Mai', 'Juin','Juillet', 'Août', 'Septembre','Octobre', 'Novembre', 'Décembre'];
+    var d = new Date();
+    var j = jours[d.getDay()];
+    var n = d.getDate();
+    var m = mois[d.getMonth()];
+    var a = d.getFullYear();
+    document.write(j + " " + n + " " + m + " " + a);
+</script>
+
+</body>
+</html>

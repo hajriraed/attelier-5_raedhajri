@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 4</title>
+</head>
+<body>
+
+<script>
+    var ch = prompt("Donner une phrase");
+    ch = ch.trim();
+    var tab = ch.split(" ");
+    var compteur = 0;
+    for (var i = 0; i < tab.length; i++) {
+        if (tab[i] != "") {
+            compteur++;
+        }
+    }
+    document.write("Nombre de mots = " + compteur);
+</script>
+
+</body>
+</html>

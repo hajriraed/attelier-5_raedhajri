@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 10</title>
+</head>
+<body>
+
+<script>
+    var ch = prompt("Donner une chaine");
+    var tab = [];
+    var nb = [];
+    for (var i = 0; i < ch.length - 1; i++) {
+        var bg = ch[i] + ch[i+1];
+        if (ch[i] != ch[i+1]) {
+            var p = tab.indexOf(bg);
+            if (p == -1) {
+                tab.push(bg);
+                nb.push(1);
+            }
+            else {
+                nb[p]++;
+            }
+        }
+    }
+    for (var i = 0; i < tab.length; i++) {
+        document.write("Le nombre de " + tab[i] +
+        " est " + nb[i] + "<br>");
+    }
+</script>
+
+</body>
+</html>

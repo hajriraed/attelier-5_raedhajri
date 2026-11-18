@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 6</title>
+</head>
+<body>
+
+<script>
+    var fruits = ['Mangue', 'Raisin', 'Figue', 'Kiwi'];
+    document.write("Fruits disponibles : " + fruits + "<br>");
+    var choix = prompt("Quel fruit voulez-vous acheter ?");
+    var p = fruits.indexOf(choix);
+    if (p != -1) {
+        fruits.splice(p, 1);
+        alert("ok!");
+    }
+    else {
+        alert("indisponible");
+    }
+    document.write("Nouvelle liste : " + fruits);
+</script>
+
+</body>
+</html>

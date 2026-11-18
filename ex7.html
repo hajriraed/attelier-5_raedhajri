@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 7</title>
+</head>
+<body>
+
+<script>
+    var d = new Date();
+    var j = d.getDate();
+    var m = d.getMonth() + 1;
+    var a = d.getFullYear();
+    var h = d.getHours();
+    var min = d.getMinutes();
+    var s = d.getSeconds();
+    if (j < 10) j = "0" + j;
+    if (m < 10) m = "0" + m;
+    if (h < 10) h = "0" + h;
+    if (min < 10) min = "0" + min;
+    if (s < 10) s = "0" + s;
+    document.write("Date : " + j + "/" + m + "/" + a + "<br>");
+    document.write("Heure : " + h + ":" + min + ":" + s);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 9</title>
+</head>
+<body>
+
+<script>
+    var ch = prompt("Donner la date de naissance jj/mm/aaaa");
+    var tab = ch.split("/");
+    var j = Number(tab[0]);
+    var m = Number(tab[1]);
+    var a = Number(tab[2]);
+    var d = new Date();
+    var age = d.getFullYear() - a;
+    var mois = d.getMonth() + 1 - m;
+    if (d.getDate() < j) {
+        mois--;
+    }
+    if (mois < 0) {
+        age--;
+        mois = mois + 12;
+    }
+    document.write(age + " ans et " + mois + " mois");
+</script>
+
+</body>
+</html>

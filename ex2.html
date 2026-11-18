@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 2</title>
+</head>
+<body>
+
+<script>
+    var ch = prompt("Donner une chaine");
+    var inv = "";
+    for (var i = ch.length - 1; i >= 0; i--) {
+        inv = inv + ch[i];
+    }
+    if (ch.toUpperCase() == inv.toUpperCase()) {
+        document.write("Palindrome");
+    }
+    else {
+        document.write("Non palindrome");
+    }
+</script>
+
+</body>
+</html>
